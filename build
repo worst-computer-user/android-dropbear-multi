@@ -40,8 +40,9 @@ fi
     AR="$toolchain/bin/llvm-ar" \
     CC="$toolchain/bin/$TARGET$PLATFORM-clang" \
     RANLIB="$toolchain/bin/llvm-ranlib" \
-    STRIP="$toolchain/bin/llvm-strip"
+    STRIP="$toolchain/bin/llvm-strip" \
+
 
 cp ../localoptions.h .
 
-make PROGRAMS="dropbear dbclient dropbearkey dropbearconvert scp" MULTI=1
+make PROGRAMS="dropbear dbclient dropbearkey dropbearconvert scp" MULTI=1 STATIC=1
