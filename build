@@ -44,4 +44,4 @@ fi
 
 cp ../localoptions.h .
 
-make PROGRAMS="dropbear dbclient dropbearkey dropbearconvert scp" SCPPROGRESS=1
+make PROGRAMS="dropbear dbclient dropbearkey dropbearconvert scp" MULTI=1 SCPPROGRESS=1
